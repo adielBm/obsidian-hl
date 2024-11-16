@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-hl",
+	"name": "Obsidian Highlight++",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "add Highlight support for some languages aren't supported by default",
+	"author": "adielbm",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
