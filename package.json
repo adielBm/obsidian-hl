@@ -1,7 +1,6 @@
 {
-	"name": "obsidian-mips-syntax-highlighter",
-	"version": "1.0.2",
-	"description": "This plugin adds Svelte syntax highlighter to Obsidian. (https://obsidian.md)",
+	"name": "obsidian-hl",
+	"version": "1.0.0",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -10,26 +9,20 @@
 	},
 	"keywords": [
 		"obsidian",
-		"plugin",
-		"mips"
+		"plugin"
 	],
 	"author": {
-		"name": "typhoon-kim",
-		"email": "typh007.kim@gmail.com",
-		"url": "https://github.com/typhoon-kim"
+		"name": "adielBm",
+		"url": "https://github.com/adielBm"
 	},
-	"homepage": "https://typhoon-kim.github.io/obsidian-mips-syntax-highlighter/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/typhoon-kim/obsidian-mips-syntax-highlighter"
-	},
-	"bugs": {
-		"url": "https://github.com/typhoon-kim/obsidian-mips-syntax-highlighter/issues",
-		"email": "typh007.kim@gmail.com"
+		"url": "https://github.com/adielBm/obsidian-hl"
 	},
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",
+		"@types/prismjs": "^1.26.5",
 		"@typescript-eslint/eslint-plugin": "5.29.0",
 		"@typescript-eslint/parser": "5.29.0",
 		"builtin-modules": "3.3.0",

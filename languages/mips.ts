@@ -1,9 +1,8 @@
+import type { Prism } from "main";
+
 /* eslint-disable no-useless-escape */
-import { loadPrism } from "obsidian"
-
-const applyPrismMips = (Prism: any) => {
-
-	Prism.languages.mips = {
+export default function mips(prism: Prism) {
+	prism.languages.mips = {
 		comment: {
 			pattern: /#.*$/m,
 			greedy: true,
@@ -32,8 +31,8 @@ const applyPrismMips = (Prism: any) => {
 				// Labels used as arguments (after comma or in first position)
 				pattern: /(?:(?:^|,)\s*)[a-zA-Z0-9_]+(?=\s*(?:$|[,)]|\s+#))/m,
 				alias: "function",
-				lookbehind: true
-			}
+				lookbehind: true,
+			},
 		],
 		register: {
 			pattern: /\$[a-z0-9]+/,
@@ -58,7 +57,7 @@ const applyPrismMips = (Prism: any) => {
 		},
 	}
 
-	Prism.hooks.add(
+	prism.hooks.add(
 		"wrap",
 		(env: { type: string; attributes: { [x: string]: any }; content: string }) => {
 			if (env.type === "entity") {
@@ -67,16 +66,3 @@ const applyPrismMips = (Prism: any) => {
 		},
 	)
 }
-
-const loadPrismWithMips = async () => {
-	try {
-		const Prism = await loadPrism()
-		applyPrismMips(Prism)
-		return Prism
-	} catch (error) {
-		console.error("Failed to load Prism:", error)
-		throw error
-	}
-}
-
-export default loadPrismWithMips
