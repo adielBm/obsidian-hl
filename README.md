@@ -1,5 +1,5 @@
 - based on https://github.com/typhoon-kim/obsidian-svelte-syntax-highlighter.
-- obsidian plugin that provides syntax highlighting (in code blocks) for some languages are not supported by default. using Prism.js highlighting engine.
+- obsidian plugin that allows to add syntax highlighting for some languages are not supported by default.
 - currently added languages:
   - `mips` (MIPS Assembly) language.
   - you can add more languages by: 
