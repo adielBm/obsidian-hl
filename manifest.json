@@ -1,9 +1,9 @@
 {
 	"id": "obsidian-hl",
-	"name": "Obsidian Highlighter",
+	"name": "Obsidian Highlight",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "add Highlight support for some languages aren't supported by default",
+	"description": "add highlight support for some languages aren't supported by default",
 	"author": "adielBm",
 	"authorUrl": "https://github.com/adielBm",
 	"isDesktopOnly": false

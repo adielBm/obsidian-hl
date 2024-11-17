@@ -1,3 +1,12 @@
-- obsidian.md plugin that addes highlighting to code blocks of some languages are not supported by prismjs. currently, the following languages are added:
+- based on https://github.com/typhoon-kim/obsidian-svelte-syntax-highlighter.
+- obsidian plugin that provides syntax highlighting (in code blocks) for some languages are not supported by default. using Prism.js highlighting engine.
+- currently added languages:
   - `mips` (MIPS Assembly) language.
-- forked and modified from https://github.com/typhoon-kim/obsidian-svelte-syntax-highlighter.
+  - you can add more languages by: 
+    - adding `<language>.ts` file in `languages` directory (like `languages/mips.ts`).
+    - register the language in `main.ts` file here: https://github.com/adielBm/obsidian-hl/blob/1688a7813b1131a96f1ec73141904b870b880618/main.ts#L26-L32
+- this is an early version, and it may have some issues, and it's not in the community plugins.
+- reference:
+  - https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code+blocks
+  - https://prismjs.com/#supported-languages
+  - https://prismjs.com/docs/
