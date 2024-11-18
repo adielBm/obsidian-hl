@@ -1,4 +1,7 @@
-- based on https://github.com/typhoon-kim/obsidian-svelte-syntax-highlighter.
+this repo is mainly based on that one: https://github.com/typhoon-kim/obsidian-svelte-syntax-highlighter 
+
+--- 
+
 - obsidian.md plugin that allows to add syntax highlighting (using prismjs) for some languages are not supported by default.
 - currently added languages:
   - `mips` (MIPS Assembly) language.
