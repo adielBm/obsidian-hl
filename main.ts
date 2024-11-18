@@ -25,11 +25,19 @@ export default class HighlightingPlugin extends Plugin {
         super(app, manifest);
 
 		// Register new languages:
+        
+        // MIPS:
         this.registerLanguage({
             name: 'mips',
             definition: (Prism) => require('./languages/mips').default(Prism)
         });
 
+        // Svelte:
+        this.registerLanguage({
+            name: 'svelte',
+            definition: (Prism) => require('./languages/svelte').default(Prism)
+        });
+        
 		// and so on...
     }
 
